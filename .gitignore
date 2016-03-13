@@ -1,0 +1,6 @@
+node_modules
+bower_components
+.git
+public/assets/js
+public/assets/css
+

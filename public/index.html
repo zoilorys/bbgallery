@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BBGALL</title>
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" charset="utf-8">
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <!-- TEMPLATES -->
+
+    <script id="gallery-item" type="text/x-handlebars-template">
+      <a href="#">
+        <img data-id="{{id}}" src="assets/img/ops/{{id}}.png" alt="{{name}}" />
+      </a>
+    </script>
+
+
+    <script id="gallery" type="text/x-handlebars-template">
+      <div class="row"><h1>HEYA</h1></div>
+      <div class="row"></div>
+    </script>
+
+
+    <script id="single-view" type="text/x-handlebars-template">
+      <div class="row"><h1>{{name}}</h1> <button class="btn btn-primary pull-right btn-back">BACK</button></div>
+      <div class="row">
+        <div class="col-xs-3">
+          <img src="assets/img/ops/{{id}}.png" alt="{{name}}" />
+        </div>
+        <div class="col-xs-6">
+          <ul>
+            <li>kills: 99</li>
+            <li>kills: 99</li>
+            <li>kills: 99</li>
+            <li>kills: 99</li>
+          </ul>
+        </div>
+      </div>
+    </script>
+
+    <!-- /TEMPLATES -->
+
+    <script type="text/javascript" src="../bower_components/underscore/underscore-min.js"></script>
+    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../bower_components/backbone/backbone-min.js"></script>
+    <script type="text/javascript" src="../bower_components/backbone.radio/build/backbone.radio.js"></script>
+    <script type="text/javascript" src="../bower_components/handlebars/handlebars.min.js"></script>
+    <script type="text/javascript" src="assets/js/bundle.js"></script>
+  </body>
+</html>
